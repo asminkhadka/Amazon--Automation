@@ -38,7 +38,7 @@ public class testRun {
         loginObj.getEmailField("asminkhadka1234@gmail.com");
         loginObj.setContinueEmail();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        loginObj.setPasswordField("Alvinhood@4");
+        loginObj.setPasswordField("Test@123");
         loginObj.clickSignIn();
         if (driver.getTitle().equals("Amazon Sign-In")) {
             report.pass("login successful");
